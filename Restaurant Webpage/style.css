@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*styling webpage*/
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+ .logo img {
+    height: 30px;
+    border-radius: 30%;
+ }
+
+ /*home page*/
+.hero img {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 100%;
+}
+
+.two {
+    position: absolute;
+    top: 40%;
+    left:32%;
+    width: 35%;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.two h1 {
+    text-align: center;
+    color: goldenrod;
+}
+
+.two h2 {
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.two p {
+    text-align: center;
+}
+
+/*about page*/
+
+.mainabout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about {
+    height: 600px;
+    width: 40%;
+    border: 2px solid white;
+    margin: 100px 70px 50px 150px;
+}
+
+ .about h2 {
+    color: goldenrod;
+    font-size: 40px;
+}
+.about p {
+font-size: 20px;
+} 
+
+.picture img {
+    height: 450px;
+    width: 500px;
+    margin: 120px 60px 50px 50px;
+} 
+
+/*contact page*/
+.contact-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: goldenrod;
+    height: 30px;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Contact Info and Form */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.contact-details,
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.contact-details h2,
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: yellow;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: goldenrod;
+}
+
+/*menu page*/
+
+.menu {
+    background-color: #333;
+    color: goldenrod;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.menu h2 {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.items {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.items img {
+    height: 300px;
+    width: 300px;
+    margin: 70px 100px 0px 100px;
+    border-radius: 10%;
+}
+
+.items p {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*footer*/
+.footer-contact h4,
+.footer-hours h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.footer-contact p,
+.footer-hours p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: #000;
+    color: goldenrod;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/*effect*/
+.navbar a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*media queries*/
+@media screen and (max-width : 600px) {
+    .navbar {
+        padding: 10px;
+    } 
+    .navbar ul li a {
+        font-weight: lighter;
+        margin-right: 5px;
+    }
+    .logo img {
+        height: 20px;
+     }
+     .hero img {
+        height: 700px;
+    }
+    .two {
+        top: 35%;
+        left:25%;
+        width: 200px;
+        font-size: 15px;
+    }
+    .two h2 {
+        font-size: 25px;
+    }
+    .two p h1 {
+       width: 50px;
+    }
+    .menu {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+    .items img {
+        height: 250px;
+        width: 250px;
+    }
+    .items p {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .menu h2 {
+        font-size: 30px;
+    }
+    .contact-header {
+        padding: 30px 10px;
+    }
+    .contact-header h1 {
+        font-size: 32px;
+    }
+    .mainabout{
+        flex-wrap: nowrap;
+    }
+    .about {
+        margin: 40px 20px 40px 15px;
+    }
+    
+     .about h2 {
+        font-size: 25px;
+    }
+    .about p {
+    font-size: 12px;
+    } 
+    
+    .picture img {
+        height: 380px;
+        width: 170px;
+        margin: 140px 5px 50px 0px;
+    } 
+}
+
+@media(min-width : 600px) and (max-width : 1024px) {
+    .two {
+        top: 33%;
+        left:25%;
+        width: 500px;
+        font-size: 25px;
+        }
+    .two h2 {
+        font-size: 40px;
+        }
+    .two p h1 {
+       width: 60px;
+        }
+    .hero img {
+        height: 950px;
+        }
+    footer{
+        padding: 70px 0;
+        }
+    .navbar {
+        padding: 30px;
+        }   
+    .contact-info {
+        padding: 180px 125px;
+        } 
+    .about {
+        height: 500px;
+        width: 50%;
+        }
+    .picture img {
+        margin: 120px 60px 50px 140px;
+        }      
+    }
+
